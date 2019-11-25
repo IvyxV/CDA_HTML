@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jarditou</title>
+</head>
+
+<body>
+    <header>
+        <img src="assets/jarditou_html_zip/images/jarditou_logo.jpg" alt="jarditou_logo" title="Logo Jarditou" width="300"
+            height="100">
+        <p>La qualité depuis 70 ans</p>
+        <ul>
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="tableau.html">tableau</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </header>
+    <img src="assets/jarditou_html_zip/images/promotion.jpg" alt="promotion" title="Image de promotion sur Lames de terrasse">
+    <h1>Contact</h1>
+    <hr>
+    <p>* Ces zones sont obligatoires</p>
+    <form action="http://bienvu.net/script.php" method="POST">
+        <fieldset>
+            <legend>Vos coordonnées</legend>
+            Votre nom* : <input type="text" name="lastname" required><br>
+            Votre prénom*:<input type="text" name="firstname" required><br>
+            Sexe*:<br>
+            <input type="radio" name="sexe" value="feminin"> Féminin
+            <input type="radio" name="sexe" value="masculin"> Masculin <br>
+            Date de naissance: <input type="date" name="ddn" value="jj/mm/aaaa"> <br>
+            Code postal:<input type="text" name="cp" pattern="^[0-9]+$"><br>
+            Adresse:<input type="text" name="cp"><br>
+            Ville:<input type="text" name="cp"><br>
+            Email*:<input type="email" name="email" placeholder="dave.loper@afpa.fr"><br>
+        </fieldset>
+    </form>
+    <br>
+    <form action="http://bienvu.net/script.php" method="POST">
+        <fieldset>
+            <legend>Votre demande</legend>
+            Sujet*:
+            <select name="sujet" required>
+                <option value="myCommands" selected>Mes commandes</option>
+                <option value="myCommands" selected>Question sur un produit</option>
+                <option value="myCommands" selected>Réclamation</option>
+                <option value="myCommands" selected>Autres</option>
+            </select><br>
+            Votre question*:
+            <textarea name="YourQuestion" cols="20" rows="2" required></textarea>
+        </fieldset>
+        <input type="checkbox" name="CGU_OK" value="CGU_OK" required> J'accepte le traitement informatique de ce
+        forumlaire.
+        <br><br>
+        <input type="submit" name="Envoyer" value="Envoyer">
+        <input type="reset" name="Annuler" value="Annuler">
+    </form><br>
+    <hr>
+    <footer>
+        <ul>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Horraires</a></li>
+            <li><a href="#">Plan du site</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
