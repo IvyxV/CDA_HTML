@@ -1,0 +1,132 @@
+<header class="Header Header--new js-Header  ">
+    <div class="Header__nav">
+        <div class="Header__burger js-Burger-toggler">
+            <button type="button" class="Header__burger-link js-SlideNav-toggler">
+                <span class="Header__burger-icon">
+                    <span class="Header__burger-line1"></span>
+                    <span class="Header__burger-line2"></span>
+                    <span class="Header__burger-line3"></span>
+                    <span class="Header__burger-line4"></span>
+                </span>
+                <span class="Header__burger-icon__subtitle">Rayons</span>
+            </button>
+        </div>
+        <a href="https://www.fnac.com/" class="Header__logo">
+            <span class="Header__logo-img"></span>
+            <span class="Header__logo-title">fnac.com</span>
+        </a>
+    </div>
+    <div class="Header__main js-headerSearchView" component:js-headersearchview="">
+        <div class="Header__search js-Header-search isHidden-tablet">
+            <form accept-charset="UTF-8" action="https://www.fnac.com/SearchResult/ResultList.aspx" method="GET"
+                name="QuickSearchForm" id="QuickSearchForm">
+                <div class="Header__search-aisle">
+                    <div class="Header__aisle">
+                        <select id="category" name="SCat"
+                            class="Header__search-dropdown--hidden js-Header__search-dropdown select-select"
+                            style="display:none;" aria-label="Rayons" component:js-header__search-dropdown="">
+                            <option value="0!1">Rayons</option>
+                            <option value="8!1">Informatique</option>
+                            <option value="2!1">Livres, BD</option>
+                            <option value="34!1">Téléphonie</option>
+                            <option value="22!1">Ebooks</option>
+                            <option value="35!1">Photo, Caméra</option>
+                            <option value="1!1">Livres en VO</option>
+                            <option value="36!1">Son, Hi-fi</option>
+                            <option value="16!1">Billetterie</option>
+                            <option value="32!1">TV, Vidéo</option>
+                            <option value="3!1">Musique</option>
+                            <option value="38!1">Sport</option>
+                            <option value="4!1">Films et Séries</option>
+                            <option value="23!1">Maison</option>
+                            <option value="5!1">Jeu vidéo</option>
+                            <option value="39!1">Bricolage</option>
+                            <option value="7!1">Enfant, Jouet</option>
+                            <option value="40!1">Jardin</option>
+                            <option value="25!1">Coffret Cadeau</option>
+                            <option value="42!1">Bagagerie</option>
+                            <option value="14!1">Papeterie</option>
+                            <option value="37!1">Erotisme</option>
+                            <option value="11!1">Gadget</option>
+                            <option value="41!1">Animalerie</option>
+                        </select><a href="javascript:;"
+                            class="select-target Header__aisle-list select-enabled select-abutted select-abutted-left select-element-attached-top select-element-attached-left select-target-attached-bottom select-target-attached-left"
+                            tabindex="0">Rayons<b></b></a>
+                    </div>
+                </div>
+                <div class="Header__search-form">
+                    <div class="Header__search-fields">
+                        <input type="search"
+                            class="Header__search-input js-HeaderSearch-input js-searchbar-input a-c_input"
+                            autocorrect="off" spellcheck="false" autocapitalize="off" autofocus="" id="Fnac_Search"
+                            name="Search" value="" placeholder="Rechercher" aria-label="Rechercher" autocomplete="off">
+                        <input type="hidden" name="sft" value="1">
+                        <input type="hidden" name="sa" id="QuickSearchFormSa" value="0">
+                        <input type="hidden" name="omnsearchtype" id="quicksearch-history-type" disabled=""
+                            value="History">
+                        <svg class="f-icon Header__search-cross js-HeaderSearch-inputClear" aria-hidden="true"
+                            role="img" focusable="false" height="20">
+                            <use xlink:href="#icon_i_038_cross_02"></use>
+                        </svg>
+                        <button class="Header__search-submit btSubmit js-btSubmit" type="submit"
+                            title="Lancer la recherche" aria-label="Lancer la recherche">
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="Header__tabs-wrapper">
+            <div class="Header__tabs js-HeaderTabs">
+                <div class="Header__tabs-item Header__tabs-item--help js-HeaderTabHelp">
+                    <a href="https://secure.fnac.com/Contact/Index"
+                        class="Header__tabs-link Header__tabs-link--help js-HeaderTab-toggle" data-panel="help"
+                        data-header-tab="help"
+                        data-track-click="{&quot;action&quot;:&quot;ShowHeaderLayer&quot;,&quot;label&quot;:&quot;Layer: Fnac vous aide&quot;}"
+                        aria-label="Toute l'aide en ligne">
+                        <div class="Header__tabs-icon Header__tabs-icon--help"></div>
+                    </a>
+                </div>
+                <div class="Header__tabs-specific-wrapper">
+                    <div class="Header__tabs-item Header__tabs-item--store js-StoreContainer js-HeaderTabStore">
+                        <a class="Header__tabs-link Header__tabs-link--store js-HeaderTab-toggle" data-panel="store-gen"
+                            data-header-tab="store" href="https://www.fnac.com/localiser-magasin-fnac/w-4"
+                            data-track-click="{&quot;action&quot;:&quot;ShowHeaderLayer&quot;,&quot;label&quot;:&quot;Layer: Magasins&quot;}">
+                            <div class="Header__tabs-icon Header__tabs-icon--store"></div>
+                            <div class="Header__tabs-title">
+                                <span class="Header__tabs-firstline">Magasins</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="Header__tabs-item Header__tabs-item--account js-HeaderTabAccount">
+                        <a class="Header__tabs-link Header__tabs-link--account js-HeaderTab-toggle"
+                            data-header-tab="account" data-usertype="unconnected"
+                            href="https://secure.fnac.com/account/personal-information?LogonType=StandardCreation&amp;PageRedir=https%3a%2f%2fwww.fnac.com%2f"
+                            data-track-click="{&quot;action&quot;:&quot;ShowHeaderLayer&quot;,&quot;label&quot;:&quot;Layer: Mon Compte: Connection&quot;}">
+
+                            <div class="Header__tabs-icon Header__tabs-icon--account"></div>
+                            <div class="Header__tabs-title">
+                                <span class="Header__tabs-firstline">Me connecter</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="Header__tabs-item Header__tabs-item--basket js-HeaderTabBasket">
+                        <a class="Header__tabs-link Header__tabs-link--basket HeaderTab-control HeaderTab-control--basket js-HeaderTab-toggle"
+                            data-header-tab="basket" href="https://secure.fnac.com/orderpipe?pipe=pop&amp;reset=1"
+                            rel="nofollow"
+                            data-track-click="{&quot;action&quot;:&quot;ShowHeaderLayer&quot;,&quot;label&quot;:&quot;Layer: Mon Panier&quot;}">
+                            <div class="Header__tabs-icon Header__tabs-icon--basket">
+                                <span class="Header__tabs-cartCount Header__tabs-cartCount--empty js-CartCount"
+                                    data-maxlabel="99+" component:js-cartcount="">0</span>
+                            </div>
+                            <div class="Header__tabs-title">
+                                <span class="Header__tabs-firstline">
+                                    Mon panier
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
